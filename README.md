@@ -1,15 +1,15 @@
 # 🛡️ Enterprise Log Audit Tool
 
-A lightweight Python-based tool to parse enterprise logs, detect anomalies using machine learning (Isolation Forest), and visualize them through an interactive Streamlit dashboard.
+A lightweight Python-based tool to parse enterprise logs, detect anomalies using an LLM model (QWEN 2.5), and visualize them through a Streamlit application.
 
 ---
 
 ## 📌 Features
 
-- 📂 Upload and parse `.log` or `.txt` files
-- 🧠 Anomaly detection using Isolation Forest (unsupervised ML)
-- 📊 Real-time log statistics and insights
-- 🎨 Clean and interactive Streamlit-based UI
+- 📂 Upload and parse `.log` files and give a security prompt `.txt` file
+- 🧠 Anomaly detection using LLM (Qwen 2.5)
+- 📊 Log statistics and visual insights
+- 🎨 Clean and interactive Streamlit-based UI with PDF exporting feature
 
 ---
 
@@ -24,10 +24,35 @@ Make sure you have:
 
 ---
 
+### ⚙️ Technologies Used
+
+- Python 3
+- Streamlit
+- LLM
+- Transformers
+- Matplotlib
+
+---
+
 ### 📦 Installation
 
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/enterprise-log-audit-tool.git
-cd enterprise-log-audit-tool
+git https://github.com/Asad-U-Khan/Log_Analyzer.git
+```
+
+For running the app, run the cells on the Audit_App.ipynb file
+
+---
+
+### 📂 Project Structure
+
+```bash
+.
+├── Audit_App.ipynb         # Main Jupyter streamlit app notebook
+├── Audit_Project.ipynb     # Jupyter notebook for Model and Analysis
+├── logs/                   # Example log files
+├── security-prompt.txt     # Security prompt for the LLM
+└── README.md               # Project documentation
+```
